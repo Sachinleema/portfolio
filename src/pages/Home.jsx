@@ -20,7 +20,7 @@ const Home = () => {
     "I am a developer and UX/UI designer based in India. I have experience in building websites. I love minimal and brutalist designs.";
   return (
     <div
-      className=" flex w-full min-h-screen flex-col md:flex-row pt-32 pb-12 md:py-40 px-6 md:px-12 relative"
+      className=" flex w-full min-h-screen flex-col md:flex-row pt-32 pb-12 md:py-40 px-6 md:px-16 relative"
       id="home"
     >
       <div className="w-full md:w-3/5">

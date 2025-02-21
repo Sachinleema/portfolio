@@ -8,7 +8,7 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="container mx-auto flex justify-between items-center py-5 px-6 md:px-10"
+        className="container mx-auto flex justify-between items-center py-5 px-6 md:px-16"
       >
         {/* Left Section - Logo & Title */}
         <div className="flex gap-4 items-center">
