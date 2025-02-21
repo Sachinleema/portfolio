@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Marquee = () => {
   return (
-    <div className="w-full overflow-hidden whitespace-nowrap text-textColor py-3 relative">
+    <div className="w-full overflow-hidden whitespace-nowrap text-textColor py-3 mt-1 md:mt-10 relative">
       <motion.div
         className="flex space-x-6 text-md md:text-6xl font-light uppercase"
         animate={{ x: ["0%", "-100%"] }}

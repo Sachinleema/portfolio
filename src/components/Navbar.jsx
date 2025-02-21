@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-background/80">
+    <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-background/80 ">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -12,7 +12,10 @@ const Navbar = () => {
       >
         {/* Left Section - Logo & Title */}
         <div className="flex gap-4 items-center">
-          <a href="/" className="text-white font-logo text-2xl md:text-4xl">
+          <a
+            href="/portfolio/"
+            className="text-white font-logo text-2xl md:text-4xl"
+          >
             Sachin Leema
           </a>
           <h2 className="hidden md:flex text-textColor text-sm md:text-base uppercase">

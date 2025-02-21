@@ -18,9 +18,10 @@ const letterVariant = {
 const Home = () => {
   const text =
     "I am a developer and UX/UI designer based in India. I have experience in building websites. I love minimal and brutalist designs.";
+
   return (
     <div
-      className=" flex w-full min-h-screen flex-col md:flex-row pt-32 pb-12 md:py-40 px-6 md:px-16 relative"
+      className="flex w-full h-3/4 flex-col md:flex-row px-6 md:px-16 relative pt-[90px] "
       id="home"
     >
       <div className="w-full md:w-3/5">
@@ -35,7 +36,7 @@ const Home = () => {
               duration: 1.5,
               ease: "easeOut",
             }}
-            className="font-tusker inline-block text-9xl md:text-[200px] text-textColor tracking-wide uppercase  overflow-hidden "
+            className="font-tusker inline-block text-9xl md:text-[200px] text-textColor tracking-wide uppercase p-1"
           >
             Designer <span className="text-textColor text-6xl">&</span>
           </motion.h1>
@@ -45,7 +46,7 @@ const Home = () => {
             initial={{ y: 200, rotateZ: 30 }}
             animate={{ y: 0, rotateZ: 0 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            className="font-tusker inline-block text-9xl md:text-[200px] text-textColor tracking-wide uppercase  overflow-hidden "
+            className="font-tusker inline-block text-9xl md:text-[200px] text-textColor tracking-wide uppercase p-1"
           >
             Developer
           </motion.h1>

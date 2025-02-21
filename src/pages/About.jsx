@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <div
-      className="w-full h-screen px-8 py-10 md:px-20 md:py-20 flex flex-col justify-between md:flex-row relative"
+      className="w-full h-screen px-8 py-10 md:px-20 md:py-16 flex flex-col justify-between md:flex-row relative"
       id="about"
     >
       {/* Floating Button (Mobile) */}
@@ -134,7 +134,7 @@ const About = () => {
           muted
           loop
           src="./videos/realestate.mp4"
-          className="absolute w-[450px] h-[278px] top-[73px] object-cover rounded-lg shadow-lg"
+          className="absolute w-[450px] h-[278px] top-[87px] object-cover rounded-lg shadow-lg"
         />
       </motion.div>
     </div>
