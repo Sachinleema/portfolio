@@ -61,9 +61,10 @@ const Contact = () => {
       id="contact"
     >
       <motion.div
-        initial={{ y: 300, opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true }}
         className="max-w-2xl w-full text-center"
       >
         <h1 className="text-5xl md:text-7xl font-bold mb-6 font-tusker tracking-wide text-textColor">

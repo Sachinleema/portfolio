@@ -28,7 +28,7 @@ const Home = () => {
         <h4 className="text-2xl md:text-3xl font-migra text-textColor">
           creative
         </h4>
-        <div className="overflow-hidden w-fit h-fit">
+        <div className="overflow-hidden w-fit h-fit  p-1">
           <motion.h1
             initial={{ y: 200, rotateZ: 30 }}
             animate={{ y: 0, rotateZ: 0 }}
@@ -36,17 +36,17 @@ const Home = () => {
               duration: 1.5,
               ease: "easeOut",
             }}
-            className="font-tusker inline-block text-9xl md:text-[200px] text-textColor tracking-wide uppercase p-1"
+            className="font-tusker inline-block text-9xl md:text-[200px] text-textColor tracking-wide uppercase"
           >
             Designer <span className="text-textColor text-6xl">&</span>
           </motion.h1>
         </div>
-        <div className="overflow-hidden w-fit h-fit">
+        <div className="overflow-hidden w-fit h-fit p-1">
           <motion.h1
             initial={{ y: 200, rotateZ: 30 }}
             animate={{ y: 0, rotateZ: 0 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            className="font-tusker inline-block text-9xl md:text-[200px] text-textColor tracking-wide uppercase p-1"
+            className="font-tusker inline-block text-9xl md:text-[200px] text-textColor tracking-wide uppercase "
           >
             Developer
           </motion.h1>

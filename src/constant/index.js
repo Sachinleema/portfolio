@@ -45,8 +45,8 @@ export const projects = [
     images: [
       "./images/reactjs.png",
       "./images/tailwind.png",
-      "./images/vscode.png",
       "./images/javascript.png",
+      "./images/vscode.png",
       "https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256",
     ]
   },
@@ -61,9 +61,9 @@ export const projects = [
     images: [
       "./images/html.png",
       "./images/css.png",
+      "./images/javascript.png",
       "./images/vscode.png",
       "./images/chrome.png",
-      "./images/javascript.png",
       "./images/ChatGPT.png",
       "https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256",
     ]
@@ -79,10 +79,10 @@ export const projects = [
     images: [
       "./images/reactjs.png",
       "./images/tailwind.png",
-      "./images/vscode.png",
-      "./images/chrome.png",
       "./images/javascript.png",
       "./images/ChatGPT.png",
+      "./images/chrome.png",
+      "./images/vscode.png",
       "https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256",
     ]
   },
@@ -97,9 +97,9 @@ export const projects = [
     images: [
       "./images/html.png",
       "./images/css.png",
-      "./images/vscode.png",
-      "./images/chrome.png",
       "./images/javascript.png",
+      "./images/chrome.png",
+      "./images/vscode.png",
       "./images/ChatGPT.png",
       "https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256",
     ]
@@ -115,9 +115,9 @@ export const projects = [
     images: [
       "./images/reactjs.png",
       "./images/tailwind.png",
+      "./images/ts.png",
       "./images/vscode.png",
       "./images/chrome.png",
-      "./images/javascript.png",
     ]
   },
 

@@ -14,9 +14,9 @@ const Navbar = () => {
         <div className="flex gap-4 items-center">
           <a
             href="/portfolio/"
-            className="text-white font-logo text-2xl md:text-4xl"
+            className="text-3xl font-normal font-logo text-white"
           >
-            Sachin Leema
+            Sachin leema
           </a>
           <h2 className="hidden md:flex text-textColor text-sm md:text-base uppercase">
             UI / UX Designer, Developer
@@ -24,12 +24,9 @@ const Navbar = () => {
         </div>
 
         {/* Right Section - Navigation */}
-        <nav className="flex space-x-4 md:space-x-6 text-textColor text-xs md:text-base font-montserat tracking-wide">
+        <nav className="flex space-x-4 md:space-x-6 text-textColor text-xs md:text-base font-montserat tracking-wide uppercase">
           <a href="#home" className="hover:text-white transition">
             Home
-          </a>
-          <a href="#about" className="hover:text-white transition">
-            About
           </a>
           <a href="#works" className="hover:text-white transition">
             Works

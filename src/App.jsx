@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Marquee from "./components/Marquee";
 import Works from "./pages/Works";
 import Contact from "./pages/Conatct";
+import Footer from "./pages/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Works />
       <Contact />
+      <Footer />
     </div>
   );
 };

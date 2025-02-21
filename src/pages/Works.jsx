@@ -9,7 +9,7 @@ const Works = () => {
 
   return (
     <div className="w-full min-h-screen" id="works">
-      <div className="w-full min-h-screen px-8 md:px-24 py-10 md:py-24 pt-24 md:pt-24">
+      <div className="w-full min-h-screen px-8 md:px-24 py-10 md:py-24 pt-6 md:pt-20">
         <div>
           <motion.h1
             initial={{ y: -200, opacity: 0 }}

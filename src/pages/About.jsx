@@ -23,18 +23,18 @@ const About = () => {
 
   return (
     <div
-      className="w-full h-screen px-8 py-10 md:px-20 md:py-16 flex flex-col justify-between md:flex-row relative"
+      className="w-full h-auto px-8 py-10 md:px-20 md:py-16 flex flex-col justify-between md:flex-row relative"
       id="about"
     >
       {/* Floating Button (Mobile) */}
       <a
         href="#contact"
-        className="md:hidden relative flex items-center justify-center text-textColor w-3/5 "
+        className="md:hidden w-full flex justify-center items-center text-textColor mt-6"
       >
         <svg
           viewBox="0 0 200 200"
-          width="120"
-          height="120"
+          width="100"
+          height="100"
           className="text-lg font-light tracking-widest custom-spin"
         >
           <path
@@ -53,12 +53,12 @@ const About = () => {
         </svg>
 
         {/* Centered Button */}
-        <button className="absolute flex items-center justify-center w-14 h-14 bg-textColor rounded-full">
+        <button className="absolute flex items-center justify-center w-12 h-12 bg-textColor rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            width="40"
-            height="40"
+            width="30"
+            height="30"
             fill="none"
             stroke="white"
             strokeWidth="2"
@@ -69,7 +69,7 @@ const About = () => {
         </button>
       </a>
 
-      {/* Custom Cursor */}
+      {/* Custom Cursor (Desktop Only) */}
       <AnimatePresence>
         {isHovering && (
           <motion.div
@@ -96,26 +96,24 @@ const About = () => {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="w-full md:w-2/5 flex flex-col items-start justify-center py-4 relative"
+        className="w-full md:w-2/5 flex flex-col items-center md:items-start justify-center py-4 relative text-center md:text-left"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
         <div className="font-tusker text-[#e9dfce] relative p-4 pb-12 md:pb-16">
-          <h1 className="text-5xl md:text-8xl uppercase">Hello, I'm Leema</h1>
-          <h2 className="absolute -right-12 top-26 text-4xl tracking-wide font-migra">
+          <h1 className="text-4xl md:text-8xl uppercase">Hello, I'm Leema</h1>
+          <h2 className="absolute -right-12 top-26 text-3xl md:text-4xl tracking-wide font-migra">
             Sachin Leema
           </h2>
         </div>
 
-        <div className="py-3 w-full h-full">
-          <p className="text-sm md:text-2xl uppercase text-white font-montserat text-center md:text-left leading-6 md:leading-8 mt-10 md:mt-0">
+        <div className="py-3 w-full">
+          <p className="text-sm md:text-2xl uppercase text-white font-montserat leading-6 md:leading-8 mt-10 md:mt-0">
             Hi, I'm a Frontend Developer and UI/UX enthusiast passionate about
             creating visually stunning and highly interactive web experiences. I
             specialize in building responsive and dynamic user interfaces using
             React, Next.js, and modern frontend technologies, ensuring seamless
-            performance across all devices. With a strong eye for design and
-            usability, I focus on clean, maintainable code and intuitive user
-            experiences that bring ideas to life.
+            performance across all devices.
           </p>
         </div>
       </motion.div>
@@ -126,16 +124,24 @@ const About = () => {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="w-full md:w-3/5 items-center justify-center relative hidden md:flex"
+        className="w-full md:w-3/5 hidden md:flex items-center justify-center relative"
       >
-        <img src="./laptop.png" alt="Laptop" className="w-4/5 relative" />
-        <video
-          autoPlay
-          muted
-          loop
-          src="./videos/realestate.mp4"
-          className="absolute w-[450px] h-[278px] top-[87px] object-cover rounded-lg shadow-lg"
-        />
+        {/* Show Smaller Image & Video on Mobile */}
+        <div className="w-full flex items-center justify-center md:hidden">
+          <img src="./laptop.png" alt="Laptop" className="w-4/5 max-w-[80%]" />
+        </div>
+
+        {/* Desktop View */}
+        <div className="hidden md:flex items-center justify-center relative">
+          <img src="./laptop.png" alt="Laptop" className="w-4/5 relative" />
+          <video
+            autoPlay
+            muted
+            loop
+            src="./videos/realestate.mp4"
+            className="absolute w-[456px] h-[279px] top-[93px] object-cover shadow-lg"
+          />
+        </div>
       </motion.div>
     </div>
   );
