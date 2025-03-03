@@ -120,5 +120,23 @@ export const projects = [
       "./images/chrome.png",
     ]
   },
+  {
+    name: "Portfolio",
+    category: "current website",
+    url: "./project/portfolio.png",
+    tech: ["React", "Tailwind CSS", "JavaScript", "Framer motion"],
+    link: "https://sachinleema.github.io/portfolio/",
+    code: "https://github.com/Sachinleema/portfolio",
+    video: "./videos/portfolio.mp4",
+    images: [
+      "./images/reactjs.png",
+      "./images/tailwind.png",
+      "./images/javascript.png",
+      "./images/ChatGPT.png",
+      "./images/chrome.png",
+      "./images/vscode.png",
+      "https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256",
+    ]
+  },
 
 ];

@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex space-x-6 my-6 md:my-0">
+        <nav className="flex space-x-6 my-6 md:my-0  mr-0 md:mr-48">
           {["Home", "About", "Projects", "Contact"].map((item, index) => (
             <motion.a
               key={index}

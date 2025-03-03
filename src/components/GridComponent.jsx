@@ -13,7 +13,7 @@ const GridComponent = ({ name, category, url, tech, link, code, images }) => {
       </div>
 
       <div className="relative group w-full flex justify-center">
-        <div className="w-[400px] md:w-[600px] h-[220px] md:h-[350px] rounded-2xl overflow-hidden relative shadow-none md:shadow-lg">
+        <div className="w-[400px] md:w-[600px] h-[220px] md:h-[350px] rounded-2xl overflow-hidden relative shadow-none md:shadow-current">
           <img
             className="w-full h-full object-cover md:object-fill transition-opacity duration-300 group-hover:opacity-50 rounded-xl"
             src={url}
